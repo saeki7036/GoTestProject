@@ -1,7 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	// go.modのモジュール名に合わせる
+	"github.com/saeki7036/GoTestProject/internal/logic"
+	"github.com/saeki7036/GoTestProject/internal/mathutil"
+	"github.com/saeki7036/GoTestProject/internal/printin"
+)
 
 func main() {
-	fmt.Println("Hello from custom GOPATH!")
+	printin.PrintTest()
+	fmt.Println("Result:", mathutil.Add(10, 5))
+	logic.VarTest()
+	logic.Varvar()
+
 }
