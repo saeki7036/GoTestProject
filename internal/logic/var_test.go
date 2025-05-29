@@ -4,7 +4,7 @@ import "fmt"
 
 const s string = "constant"
 
-func Varvar() {
+func VarTest2() {
 	const n = 500000000
 	const dd = 3e20 / n
 	fmt.Println(dd)
